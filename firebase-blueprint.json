@@ -1,0 +1,119 @@
+{
+  "collections": {
+    "settings": {
+      "documents": {
+        "business": {
+          "fields": {
+            "businessName": { "type": "string" },
+            "tagline": { "type": "string" },
+            "logoUrl": { "type": "string" },
+            "faviconUrl": { "type": "string" },
+            "whatsappNumber": { "type": "string" },
+            "email": { "type": "string" },
+            "physicalAddress": { "type": "string" },
+            "googleMapsUrl": { "type": "string" },
+            "facebookUrl": { "type": "string" },
+            "instagramUrl": { "type": "string" },
+            "tiktokUrl": { "type": "string" },
+            "youtubeUrl": { "type": "string" },
+            "twitterUrl": { "type": "string" },
+            "websiteUrl": { "type": "string" },
+            "footerText": { "type": "string" }
+          }
+        },
+        "homepage": {
+          "fields": {
+            "heroTitle": { "type": "string" },
+            "heroSubtitle": { "type": "string" },
+            "heroBackground": { "type": "string" },
+            "primaryButtonText": { "type": "string" },
+            "secondaryButtonText": { "type": "string" },
+            "featuredLimit": { "type": "number" },
+            "newArrivalsLimit": { "type": "number" },
+            "hotDealsLimit": { "type": "number" }
+          }
+        },
+        "security": {
+          "fields": {
+            "accessKeyHash": { "type": "string" },
+            "sessionTimeout": { "type": "number" },
+            "maintenanceMode": { "type": "boolean" },
+            "failedAttemptLimit": { "type": "number" },
+            "lockoutDuration": { "type": "number" },
+            "imgbbApiKey": { "type": "string" }
+          }
+        }
+      }
+    },
+    "categories": {
+      "schema": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "icon": { "type": "string" },
+        "displayOrder": { "type": "number" },
+        "isActive": { "type": "boolean" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "brands": {
+      "schema": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "logoUrl": { "type": "string" },
+        "description": { "type": "string" },
+        "isActive": { "type": "boolean" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "products": {
+      "schema": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "slug": { "type": "string" },
+        "categoryId": { "type": "string" },
+        "brandId": { "type": "string" },
+        "model": { "type": "string" },
+        "description": { "type": "string" },
+        "sellingPrice": { "type": "number" },
+        "previousPrice": { "type": "number" },
+        "stockQuantity": { "type": "number" },
+        "lowStockThreshold": { "type": "number" },
+        "condition": { "type": "string" },
+        "status": { "type": "string" },
+        "coverImage": { "type": "string" },
+        "images": { "type": "array" },
+        "isFeatured": { "type": "boolean" },
+        "isHotDeal": { "type": "boolean" },
+        "totalViews": { "type": "number" },
+        "totalShares": { "type": "number" },
+        "whatsappClicks": { "type": "number" },
+        "favoritesCount": { "type": "number" },
+        "specifications": { "type": "array" },
+        "internalNotes": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      }
+    },
+    "logs": {
+      "schema": {
+        "id": { "type": "string" },
+        "action": { "type": "string" },
+        "module": { "type": "string" },
+        "description": { "type": "string" },
+        "timestamp": { "type": "string" },
+        "ipHash": { "type": "string" }
+      }
+    },
+    "users": {
+      "schema": {
+        "id": { "type": "string" },
+        "username": { "type": "string" },
+        "passwordHash": { "type": "string" },
+        "displayName": { "type": "string" },
+        "role": { "type": "string" },
+        "isActive": { "type": "boolean" },
+        "createdAt": { "type": "string" }
+      }
+    }
+  }
+}

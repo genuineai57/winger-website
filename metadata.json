@@ -1,0 +1,6 @@
+{
+  "name": "Product Catalog Platform",
+  "description": "A premium technology product showcase and broker sharing catalog with WhatsApp ordering integration and a multi-layer hidden administration portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
